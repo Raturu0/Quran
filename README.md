@@ -1,6 +1,6 @@
 # Assalamualaikum WR WB
 # QURAN 
-This repo contain All contains all the letters of the Qyran
+This repo contain All contains all the letters of the Quran
 <br>
 <br>
 
