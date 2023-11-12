@@ -1,8 +1,26 @@
-# React + Vite
+# Assalamualaikum WR WB
+# QURAN 
+This repo contain All contains all the letters of the Quran
+<br>
+<br>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# TOOLS
+Some tools for this repo = 
+<br>
+- React JS
+- Tailwind CSS
+- API quran open source
+<br>
+<br>
+This repo currently under progress
+<br>
+Progress = styling + responsive design
+<br>
+Done = Router, get API
 
-Currently, two official plugins are available:
+# LINK DEMO
+U can see the link demo of this repo in --> https://quran-ahmad.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+<br>
+Thankyou, wassalamualaikum wr. wb
