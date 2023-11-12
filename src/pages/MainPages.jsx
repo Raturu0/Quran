@@ -4,18 +4,9 @@ import axios from "axios";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import Banner from "../fragments/Banner";
 
-const Banner = () => {
-  return (
-    <Fragment>
-      <section id="BANNER">
-        <div className="w-full h-32 bg-[#072541] flex justify-center items-center">
-          <h1 className="text-white text-2xl font-bold">AL QURAN</h1>
-        </div>
-      </section>
-    </Fragment>
-  );
-};
+
 
 const Card = (props) => {
   const { nomor, namaLatin, nama, tempatTurun, jumlahAyat } = props;
