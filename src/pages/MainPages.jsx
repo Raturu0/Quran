@@ -18,23 +18,23 @@ const Banner = () => {
 };
 
 const Card = (props) => {
-  const { nomor, namaLatin, nama, tempatTurun } = props;
+  const { nomor, namaLatin, nama, tempatTurun, jumlahAyat } = props;
   //   const [suratNumbers, setSuratNumbers] = useState(0);
 
   return (
     <Fragment>
-      <Link to={`/DetailSurat/${nomor}`}>
-        <div className="w-full h-full bg-black text-white py-2 px-3 my-3 hover:bg-gray-800">
-          <div>
+      <Link to={`/DetailSurat/${nomor}`} className="w-[45%] md:mx-3 md:my-3 lg:w-[30%]">
+        <div className="w-full h-full bg-[#001524] text-white py-2 px-3 mb-3 md:mx-5 hover:bg-gray-800 transition-all duration-100">
+          <h1 className="my-2 arab">
+            {nomor}. {namaLatin}
+          </h1>
+          <div className="flex flex-wrap justify-end">
+            <h1 className="my-2 font-bold text-2xl">{nama}</h1>
+          </div>
+          <div className="flex flex-wrap justify-end">
             <h1 className="my-2">
-              {nomor}. {namaLatin}
+              {tempatTurun} • {jumlahAyat} ayat
             </h1>
-          </div>
-          <div className="flex flex-wrap justify-end">
-            <h1 className="my-2">{nama}</h1>
-          </div>
-          <div className="flex flex-wrap justify-end">
-            <h1 className="my-2">{tempatTurun}</h1>
           </div>
         </div>
       </Link>
@@ -59,15 +59,18 @@ const MainPages = () => {
   return (
     <Fragment>
       <Banner />
-      {surats.map((surat) => (
-        <Card
-          key={surat.nomor}
-          nomor={surat.nomor}
-          namaLatin={surat.namaLatin}
-          nama={surat.nama}
-          tempatTurun={surat.tempatTurun}
-        />
-      ))}
+      <section className="bg-black pl-5 px-5 pt-10 md:flex md:flex-wrap md:justify-center">
+        {surats.map((surat) => (
+          <Card
+            key={surat.nomor}
+            nomor={surat.nomor}
+            namaLatin={surat.namaLatin}
+            nama={surat.nama}
+            tempatTurun={surat.tempatTurun}
+            jumlahAyat={surat.jumlahAyat}
+          />
+        ))}
+      </section>
     </Fragment>
   );
 };

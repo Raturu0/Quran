@@ -34,7 +34,7 @@ const DetailSuratPage = () => {
   return (
     <Fragment>
       {detailSurats.map((detailSurat) =>
-        detailSurat.ayat.map((ayat) => <DetailSurat key={ayat.nomor} ayat={ayat.teksArab}/>)
+        detailSurat.ayat.map((ayat) => <DetailSurat key={ayat.nomor} nomor={ayat.nomorAyat} ayat={ayat.teksArab}/>)
       )}
     </Fragment>
   );
