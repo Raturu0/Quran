@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Banner from "../fragments/Banner";
 import FragmentSearch from "../fragments/FragmentSearch";
 import ComponentCard from "../components/ComponentCard";
+import Footer from "../fragments/FragmentFooter";
 
 
 const MainPages = () => {
@@ -48,6 +49,7 @@ const MainPages = () => {
             )
         )}
       </section>
+      <Footer />
     </Fragment>
   );
 };
